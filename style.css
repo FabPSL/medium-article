@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.banner {
+  background-image: url("https://source.unsplash.com/random/1000x500");
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.banner p {
+  font-size: larger;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 20px;
+  width: 700px;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: #586565;
+}
+
+.link-medium {
+  line-height: 4em;
+  padding-right: 0.5em;
+  font-size: 2em;
+  text-decoration: none;
+  font-style: italic;
+  color: #2c3333;
+  /* background: linear-gradient(90deg, rgba(159,157,194,1) 0%, rgba(159,159,190,1) 35%, rgba(0,212,255,1) 100%); */
+  background: linear-gradient(red, blue);
+  transition: all 1s ease-in-out;
+  border-radius: 10px;
+}
+
+.link-medium:hover {
+  color: #bdc8cb;
+  background-position-y: -100px;
+
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 500px;
+
+  }
+}
+
+@media(max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+  .banner {
+    padding: 10px 0;
+  }
+}
